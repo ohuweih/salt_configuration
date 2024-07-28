@@ -1,0 +1,19 @@
+user: root
+enable_ssh_minions: True
+root_dir: /srv/
+userdata_template: jinja
+ssh_user: ec2-user
+file_recv: True
+fileserver_followsymlinks: True
+  file_roots:
+  base:
+  - /srv/salt/
+
+reactor:
+  - 'salt/auth':
+    - /srv/reactor/start_highstate.sls
+
+pillar_roots:
+  base:
+    - /srv/pillar
+state_top: top.sls
