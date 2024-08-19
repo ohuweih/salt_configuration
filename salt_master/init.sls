@@ -15,8 +15,8 @@
     - template: jinja
     - mode: 0644
 
-{% if master in grains['id'] %}
-{% if 1 in grains['id'] %}
+{% if 'master' in grains['id'] %}
+{% if '1' in grains['id'] %}
 {{ state_id_prefix }}_set_cron:
   cron.present:
     - name "salt-cp salt_master_2 /etc/salt/pki/ /etc/salt/pki/"
