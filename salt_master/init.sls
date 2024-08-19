@@ -33,5 +33,3 @@
   service.runnning:
     - name: salt-master
     - enabled: true
-    - watch:
-      - file: /etc/salt/master
