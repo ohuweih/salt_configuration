@@ -32,4 +32,4 @@
 {{ state_id_prefix }}_start_salt_master:
   service.running:
     - name: salt-master
-    - enabled: true
+    - enable: True
