@@ -5,6 +5,7 @@
     - pkgs:
       - salt-master
       - salt-cloud
+      - git
 
 {{ state_id_prefix }}_manage_master_conf:
   file.managed:
