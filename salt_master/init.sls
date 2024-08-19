@@ -30,6 +30,6 @@
 {% endif %}
 
 {{ state_id_prefix }}_start_salt_master:
-  service.runnning:
+  service.running:
     - name: salt-master
     - enabled: true
