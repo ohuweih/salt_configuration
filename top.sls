@@ -5,6 +5,6 @@ base:
     - match: grain
     - salt_master
     - salt-cloud
-  "application:apache":
+  "role:apache":
     - match: grain
     - apache
