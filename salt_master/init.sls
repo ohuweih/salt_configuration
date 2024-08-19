@@ -19,7 +19,7 @@
 {% if '1' in grains['id'] %}
 {{ state_id_prefix }}_set_cron:
   cron.present:
-    - name "salt-cp salt_master_2 /etc/salt/pki/ /etc/salt/pki/"
+    - name: "salt-cp salt_master_2 /etc/salt/pki/ /etc/salt/pki/"
     - user: root
     - minute: 5
     - hour: "*"
