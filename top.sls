@@ -8,3 +8,6 @@ base:
   "role:apache":
     - match: grain
     - apache
+  "role:oracle":
+    - match: grain
+    - oracle
