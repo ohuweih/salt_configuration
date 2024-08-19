@@ -1,4 +1,4 @@
-{% set state_id_prefix = salt_master %}
+{% set state_id_prefix = 'salt_master' %}
 
 {{ state_id_prefix }}_install_salt:
   pkg.installed:
