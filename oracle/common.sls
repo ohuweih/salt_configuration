@@ -65,3 +65,14 @@
     - group: oinstall
     - mode: 0755
     - makedirs: True
+
+
+{{ state_id_prefix }}_firewalld_service:
+  service.dead:
+    - name: firewalld
+    - enable: False
+
+
+{{ state_id_prefix }}_selinux_mode:
+  selinux.mode:
+    - name: permissive
