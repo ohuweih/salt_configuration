@@ -35,6 +35,9 @@
     - name: {{ config["name"] }}
     - uid: {{ config["uid"] }}
     - gid: {{ config["gid"] }}
+    - groups: 
+      - wheel
+    - password: ''
 {% endfor %}
 
 
