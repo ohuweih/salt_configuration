@@ -37,6 +37,7 @@
     - gid: {{ config["gid"] }}
     - groups: 
       - wheel
+      - oinstall
     - password: ''
 {% endfor %}
 
