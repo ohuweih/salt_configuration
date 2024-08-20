@@ -32,11 +32,11 @@
       - "./asmcmd afd_label DATA1 /dev/sdb --init"
       - "./asmcmd afd_label DATA2 /dev/sdc --init"
       - "./asmcmd afd_label DATA3 /dev/sdd --init"
-      - runas: root
-      - cwd: "/u01/app/oracle/product/23.0.0/grid/bin"
-      - env:
-        - ORACLE_HOME: "/u01/app/oracle/product/23.0.0/grid"
-        - ORACLE_BASE: "/tmp"
+    - runas: root
+    - cwd: "/u01/app/oracle/product/23.0.0/grid/bin"
+    - env:
+      - ORACLE_HOME: "/u01/app/oracle/product/23.0.0/grid"
+      - ORACLE_BASE: "/tmp"
 
 
 {{ state_id_prefix }}_asmcmd_verify:
@@ -45,11 +45,11 @@
       - "./asmcmd afd_lslbl /dev/sdb "
       - "./asmcmd afd_lslbl /dev/sdc "
       - "./asmcmd afd_lslbl /dev/sdd "
-      - runas: root
-      - cwd: "/u01/app/oracle/product/23.0.0/grid/bin"
-      - env:
-        - ORACLE_HOME: "/u01/app/oracle/product/23.0.0/grid"
-        - ORACLE_BASE: "/tmp"
+    - runas: root
+    - cwd: "/u01/app/oracle/product/23.0.0/grid/bin"
+    - env:
+      - ORACLE_HOME: "/u01/app/oracle/product/23.0.0/grid"
+      - ORACLE_BASE: "/tmp"
 
 
 {% if salt['grains.get']('grid_installed') is defined %}
