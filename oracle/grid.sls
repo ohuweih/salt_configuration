@@ -11,7 +11,7 @@
 {{ state_id_prefix }}_zip_file:
   file.managed:
     - name: /root/grid_home.zip
-    - source: https://download.oracle.com/otn/linux/oracle19c/190000/LINUX.X64_193000_grid_home.zip?AuthParam=1724116712_d494ab9534294dc0be93634c3ad1ddbc
+    - source: https://download.oracle.com/otn/linux/oracle19c/190000/LINUX.X64_193000_grid_home.zip?AuthParam=1724120126_eb04b1584c38008310d10b010f51cf64
     - skip_verify: True
     - user: grid
     - group: oinstall
