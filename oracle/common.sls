@@ -47,8 +47,8 @@
     - name: {{ config["name"] }}
     - gid: {{ config["gid"] }}
     - members:
-      - {{ map["oracle_db_user"] }}
-      - {{ map["oracle_grid_user"] }}
+      - oracle
+      - grid
 {% endfor %}
 
 
